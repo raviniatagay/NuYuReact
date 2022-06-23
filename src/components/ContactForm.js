@@ -1,5 +1,6 @@
 import { Button, Label, Col, FormGroup } from 'reactstrap';
-import { Formik, Field, Form } from 'formik';
+import { Formik, Field, Form, ErrorMessage } from 'formik';
+import validateContactForm from '../utils/validateContactForm';
 
 const ContactForm = () => {
     const handleSubmit = (values, {resetForm}) => {
@@ -20,6 +21,7 @@ const ContactForm = () => {
                 feedback: ''
             }}
                 onSubmit = {handleSubmit}
+                validate = {validateContactForm}
         >
             <Form>
                  <FormGroup row>   {/*1*/}
@@ -28,6 +30,9 @@ const ContactForm = () => {
                     </Label>
                     <Col md='10'>
                         <Field className='form-control' name='firstName'></Field>
+                        <ErrorMessage name='firstName'>
+                            {(msg) => <p className='text-danger'>{msg}</p>}
+                        </ErrorMessage>
                     </Col>
                 </FormGroup>
                 <FormGroup row>    {/*2*/}
@@ -36,6 +41,9 @@ const ContactForm = () => {
                     </Label>
                     <Col md='10'>
                         <Field className='form-control' name='lastName'></Field>
+                        <ErrorMessage name='lastName'>
+                            {(msg) => <p className='text-danger'>{msg}</p>}
+                        </ErrorMessage>
                     </Col>
                 </FormGroup>
                 <FormGroup row>    {/*3*/}
@@ -44,6 +52,9 @@ const ContactForm = () => {
                     </Label>
                     <Col md='10'>
                         <Field className='form-control' name='phoneNum'></Field>
+                        <ErrorMessage name='phoneNum'>
+                            {(msg) => <p className='text-danger'>{msg}</p>}
+                        </ErrorMessage>
                     </Col>
                 </FormGroup>
                 <FormGroup row>    {/*4*/}
@@ -52,6 +63,9 @@ const ContactForm = () => {
                     </Label>
                     <Col md='10'>
                         <Field className='form-control' name='email'></Field>
+                        <ErrorMessage name='email'>
+                            {(msg) => <p className='text-danger'>{msg}</p>}
+                        </ErrorMessage>
                     </Col>
                 </FormGroup>
                 <FormGroup row>    {/*5*/}
