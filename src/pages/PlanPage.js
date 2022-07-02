@@ -1,17 +1,15 @@
 import { Container } from 'reactstrap';
-// import DisplayList from '../features/display/DisplayList';
-import LocationsList from '../features/locations/LocationsList';
 import PlansList from '../features/plans/PlansList';
 import SubHeader from '../components/SubHeader';
 
-const HomePage = () => {
+const PlanPage = () => {
     return (
         <Container>
             <SubHeader current='Home' />
-            <LocationsList />
+            {/* <LocationsList /> */}
             <PlansList />
         </Container>
     );
 };
 
-export default HomePage;
+export default PlanPage;

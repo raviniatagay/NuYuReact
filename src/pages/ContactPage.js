@@ -10,9 +10,9 @@ const ContactPage = () => {
                 <Col sm='4'>
                     <h5>Our Address</h5>
                     <address>
-                        1 Nucamp Way
+                        1 NuYu Way
                         <br />
-                        Seattle, WA 98001
+                        Chicago, IL 60601
                         <br />
                         U.S.A.
                     </address>
@@ -21,9 +21,9 @@ const ContactPage = () => {
                     <a
                         role='button'
                         className='btn btn-link'
-                        href='tel:+12065551234'
+                        href='tel:+18475551234'
                     >
-                        <i className='fa fa-phone' /> 1-206-555-1234
+                        <i className='fa fa-phone' /> 1-847-555-1234
                     </a>
                     <br />
                     <a
@@ -31,7 +31,7 @@ const ContactPage = () => {
                         className='btn btn-link'
                         href='mailto:fakeemail@fakeemail.co'
                     >
-                        <i className='fa fa-envelope-o' /> campsites@nucamp.co
+                        <i className='fa fa-envelope-o' /> info@nuyugyms.co
                     </a>
                 </Col>
             </Row>
