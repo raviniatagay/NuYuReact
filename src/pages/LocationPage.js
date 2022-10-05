@@ -1,5 +1,4 @@
-import { Col, Row, Container } from 'reactstrap';
-import LocationCard from '../features/locations/LocationCard';
+import { Row, Container } from 'reactstrap';
 import { selectAllLocations } from '../features/locations/locationsSlice';
 import { useSelector } from 'react-redux';
 import SubHeader from '../components/SubHeader';
@@ -17,7 +16,7 @@ const LocationPage = () => {
                         <div class="col">
                             <div class="media">
                                 <Link to={`${location.id}`}>
-                                    <a data-toggle="modal" data-target="#mapLocModal"><img class="d-flex mr-3 img-thumbnail" src={location.image} alt={location.name} /></a>
+                                    <img class="d-flex mr-3 img-thumbnail" src={location.image} alt={location.name} />
                                 </Link>
                                 <div class="media-body align-self-center">
                                     <h3>{location.name}</h3>

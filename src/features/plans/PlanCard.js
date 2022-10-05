@@ -1,4 +1,4 @@
-import { Card, CardBody, CardText, CardSubtitle, CardTitle, Container } from 'reactstrap';
+import { Card, CardBody, CardText, CardSubtitle, CardTitle } from 'reactstrap';
 import { Link } from 'react-router-dom';
 
 const PlanCard = ({plan}) => {

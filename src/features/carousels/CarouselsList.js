@@ -11,7 +11,7 @@ const CarouselsList = () => {
     return (
         <Row className = "ms-auto"> 
             <Carousel autoPlay={true} showThumbs={false} showStatus={false} interval={1000}>
-                {carousels.map(carousel => <div><img src={carousel.image} /></div>)}
+                {carousels.map(carousel => <div><img src={carousel.image} alt={carousel.name}/></div>)}
             </Carousel>    
         </Row>
     );

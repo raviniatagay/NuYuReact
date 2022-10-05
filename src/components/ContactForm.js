@@ -89,7 +89,7 @@ const ContactForm = () => {
                         Your Feedback 
                     </Label>
                     <Col md='10'>
-                        <Field className='form-control' name='feedback' name='feedback' as='textarea' rows='12'></Field>
+                        <Field className='form-control' name='feedback' as='textarea' rows='12'></Field>
                     </Col>
                 </FormGroup>
                 <FormGroup row>   {/*7*/} 
