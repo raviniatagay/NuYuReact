@@ -20,8 +20,3 @@ export const selectAllPlans = (state) => {
 export const selectPlanById = (id) => (state) => {
     return state.plans.plansArray.find((plan) => plan.id === parseInt(id));
 };
-
-export const selectFeaturedPlan = (state) => {
-    console.log(state)
-    return state.plans.plansArray.find((plan) => plan.featured);
-};

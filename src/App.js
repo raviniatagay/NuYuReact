@@ -3,11 +3,10 @@ import ContactPage from './pages/ContactPage';
 import HomePage from './pages/HomePage';
 import LocationPage from './pages/LocationPage';
 import PlanPage from './pages/PlanPage';
-import AboutPage from './pages/AboutPage';
+import ClassesPage from './pages/ClassesPage';
 import './App.css';
 import Header from './components/Header';
 import Footer from './components/Footer';
-
 
 function App() {
   return (
@@ -18,10 +17,11 @@ function App() {
         <Route path='locations' element={<LocationPage/>} />
         <Route path='contact' element={<ContactPage/>} />
         <Route path='plan' element={<PlanPage/>} />
-        {/* <Route
-            path='directory/:campsiteId'
-            element={<CampsiteDetailPage />}
-        /> */}
+        <Route path='classes' element={<ClassesPage/>} />
+        <Route
+            path='home/:LocationId'
+            element={<LocationPage />}
+        />
       </Routes>
       <Footer/>
     </div>

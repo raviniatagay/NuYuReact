@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Comfortaa|Open+Sans');
+
 body {
     font-family: 'Open Sans', sans-serif;
 }
@@ -73,13 +75,13 @@ h2 {
     transition: 300ms ease-in;
 }
 .card1 {
-    background-color:dodgerblue; }
+    color:dodgerblue; }
   
   .card2 {
-    background-color:gold }
+    color:gold }
   
   .card3 {
-    background-color:mediumpurple; }
+    color:mediumpurple; }
   
   .img2 {
     border-radius: 50%; }

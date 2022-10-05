@@ -37,7 +37,7 @@ const Header = () => {
                         </NavLink>
                     </NavItem>
                     <NavItem>
-                        <NavLink className='nav-link' to='/about'>
+                        <NavLink className='nav-link' to='/classes'>
                             Classes                        
                         </NavLink>
                     </NavItem>

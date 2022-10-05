@@ -3,6 +3,7 @@ import PlanCard from "./PlanCard";
 import { selectAllPlans } from './plansSlice';
 import { useSelector } from 'react-redux';
 
+
 const PlansList = () => {
     const plans = useSelector(selectAllPlans);
         

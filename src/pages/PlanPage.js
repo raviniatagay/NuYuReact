@@ -5,8 +5,7 @@ import SubHeader from '../components/SubHeader';
 const PlanPage = () => {
     return (
         <Container>
-            <SubHeader current='Home' />
-            {/* <LocationsList /> */}
+            <SubHeader current='Membership' />
             <PlansList />
         </Container>
     );

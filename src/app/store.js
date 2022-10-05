@@ -2,19 +2,18 @@ import logger from 'redux-logger';
 import { configureStore } from '@reduxjs/toolkit';
 import { userReducer } from '../features/user/userSlice';
 import { locationsReducer } from '../features/locations/locationsSlice';
-import { plansReducer } from '../features/plans/plansSlice'
-import { commentsReducer } from '../features/comments/commentsSlice';
-import { partnersReducer } from '../features/partners/partnersSlice';
-import { promotionsReducer } from '../features/promotions/promotionsSlice';
+import { plansReducer } from '../features/plans/plansSlice';
+import { classesReducer } from '../features/classes/classesSlice';
+import { carouselsReducer } from '../features/carousels/carouselsSlice';
+
 
 export const store = configureStore({
   reducer: {
     locations: locationsReducer,
-    plans: plansReducer,
-    comments: commentsReducer,
-    partners: partnersReducer,
-    promotions: promotionsReducer,
-    user: userReducer
+    plans: plansReducer,  
+    classes: classesReducer,  
+    user: userReducer,
+    carousels: carouselsReducer
   },
   middleware: (getDefaultMiddleware) => 
       getDefaultMiddleware().concat([logger])  
